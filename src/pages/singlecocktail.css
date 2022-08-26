@@ -1,0 +1,145 @@
+.singlecCover{
+    width:100%;
+    height: auto;
+    background-color: rgb(241,245,248);
+    padding: 2rem 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+.ccardBtn{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    background-color: rgb(46, 61, 15);
+    color:rgb(235, 235, 235);
+    border-radius: 5px;
+    border: 1px solid rgb(46, 61, 15);
+    transition: all 0.3s;
+    letter-spacing: 4px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+
+
+}
+
+.ccardBtn:hover{
+    background-color: rgb(151, 202, 49);
+    border: 1px solid rgb(151, 202, 49);
+    color:rgb(46, 61, 15);
+    cursor:pointer;
+
+
+}
+
+
+
+.cocktailName{
+
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    text-align: center;
+    margin-top: 1.5rem;
+
+
+}
+
+.scmiddle{
+    display: flex;
+    /* flex-wrap: wrap; */
+
+}
+
+.singlecLeftSide{
+    width:40%;
+    padding: 1.5rem;
+}
+
+
+.singlecimg{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    
+
+}
+
+
+
+
+
+.singlecRightSide{
+    width:60%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.lineauth{
+    margin: 0.7rem 0rem;
+    text-transform: capitalize;
+}
+
+
+.singlecTextLabel{
+    text-transform: capitalize;
+    padding: 0.3rem 0.5rem;
+    background-color: rgb(202, 223, 160);
+    color:rgb(48, 70, 3);
+    border-radius: 5px;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.2;
+
+
+}
+
+.singlecText{
+    letter-spacing: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: black;
+    margin-left: 0.5rem;
+    line-height: 1.8;
+
+}
+
+
+@media all and (max-width:900px){
+
+    
+.scmiddle{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.singlecLeftSide{
+    width:100%;
+}
+
+
+
+.singlecRightSide{
+    width:100%;
+}
+
+
+
+}

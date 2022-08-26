@@ -1,24 +1,38 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {createContext, useEffect, useState} from 'react';
+import CocktailApp from './CocktailApp';
+import Yukleniyor from './components/Yukleniyor';
+
+
+export const MerkezVeri  = createContext();
+
 
 function App() {
+
+  const [cocktails, setCocktails] = useState([]);
+  const [yukleniyor, setYukleniyor] = useState(true);
+  const [aranan, setAranan] = useState("m");
+  
+const veriGetir = async (aranan) => {
+  let data = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=' + aranan);
+  let veri = await data.json();
+  console.log(veri.drinks);
+  setCocktails(veri.drinks);
+  setYukleniyor(false);
+}
+
+
+  useEffect(()=>{
+    veriGetir(aranan);
+
+  },[])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MerkezVeri.Provider value={{cocktails, setAranan, veriGetir }}>
+      {!yukleniyor ? <CocktailApp/> : <Yukleniyor/>}
+    </MerkezVeri.Provider>
   );
 }
 

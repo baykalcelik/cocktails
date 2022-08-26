@@ -1,0 +1,29 @@
+.sbCover{
+    width: 42rem;
+    height: 9rem;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.2);
+    margin-top:3rem;
+    padding: 2rem;
+}
+
+.sbtext{
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color:rgb(71,106,46);
+    margin-bottom: 1rem;
+
+
+}
+
+.sbinput{
+    width:100%;
+    font-size:1.1rem;
+    padding: 0.5rem;
+    border:none;
+    background-color: rgb(241,248,245);
+
+}
+

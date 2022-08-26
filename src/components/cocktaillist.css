@@ -1,0 +1,56 @@
+
+
+.clCover{
+    width:100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.clHeader{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+
+
+}
+
+.clcArea{
+    width:100%;
+    min-height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0rem 5rem 3rem 5rem;
+    gap: 2rem;
+
+}
+
+
+@media all and (max-width:1150px) {
+    
+    .clcArea{
+        padding: 0rem 1rem 2rem 1rem;
+    
+    }
+
+}
+
+
+@media all and (max-width:800px) {
+    
+    .clcArea{
+        padding: 0rem 1rem 2rem 1rem;
+    
+    }
+
+}
+
+
+
+
